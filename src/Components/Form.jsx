@@ -1,16 +1,20 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 
 export default class Form extends Component {
   constructor() {
     super();
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      redirect:false
     };
   }
 
-  handleSubmit = (event) => {
-    console.log(this.State);
+  handleSubmit = (e) => {
+    if(this.state.email ==='admin@admin.com' && this.state.password === '1234'){
+      location.href = '/react.org';
+    }
   };
 
   render() {
@@ -41,14 +45,9 @@ export default class Form extends Component {
                 value={this.state.password}
               />
             </div>
-            <button
-              onClick={this.handleSubmit}
-              type="submit"
-              className="btn btn-primary"
-            >
-              Submit
-            </button>
+            <Link to="/react.org" className='btn btn-primary'>Submit</Link>
           </form>
+         
         </div>
       </>
     );
