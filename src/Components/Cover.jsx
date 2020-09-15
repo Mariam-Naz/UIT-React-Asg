@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 import Header from "./Header";
 
 export default class Cover extends Component {
@@ -15,9 +16,9 @@ export default class Cover extends Component {
           </div>
           <div className="row">
             <div className="mx-auto get-take">
-              <a className="col-md-6 get-btn mr-3" href="#">
+              <Link className="col-md-6 get-btn mr-3" to='/login'>
                 Get Started
-              </a>
+              </Link>
               <a className="col-md-6 take-tutorial" href="#">
                 Take the Tutorial >
               </a>

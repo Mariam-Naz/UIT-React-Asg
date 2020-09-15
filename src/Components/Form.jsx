@@ -11,12 +11,6 @@ export default class Form extends Component {
     };
   }
 
-  handleSubmit = (e) => {
-    if(this.state.email ==='admin@admin.com' && this.state.password === '1234'){
-      location.href = '/react.org';
-    }
-  };
-
   render() {
     return (
       <>
@@ -45,7 +39,7 @@ export default class Form extends Component {
                 value={this.state.password}
               />
             </div>
-            <Link to="/react.org" className='btn btn-primary'>Submit</Link>
+            <Link to="/blog" className='btn btn-primary'>Submit</Link>
           </form>
          
         </div>

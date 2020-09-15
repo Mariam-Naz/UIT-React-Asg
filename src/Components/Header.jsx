@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { FaReact } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid">
+        <div className="container-fluid header-container">
           <div className="row">
             <h1>
               Black Lives Matter.
@@ -16,33 +17,45 @@ export default class Header extends Component {
           </div>
           <div className="d-flex justify-content-start">
             <div className="logo flex-grow-1">
-              <a href="#" className="react pr-2">
+              <a href="#" className="react pr-2 pb-3">
                 <FaReact />
               </a>
-              <a href="#" className="react" id="hide">
+              <a href="#" className="react pb-3" id="hide">
                 React
               </a>
             </div>
             <div className="nav">
-              <a href="#">Docs</a>
+              <NavLink to="/docs" activeClassName="menu-active">
+                Docs
+              </NavLink>
+            </div>
+            <div className="nav pb-3">
+              <NavLink to="/tutorial" activeClassName="menu-active">
+                Tutorial
+              </NavLink>
             </div>
             <div className="nav">
-              <a href="#">Tutorial</a>
-            </div>
-            <div className="nav">
-              <a href="#">Blog</a>
+              <NavLink to="/blog" activeClassName="menu-active">
+                Blog
+              </NavLink>
             </div>
             <div className="nav flex-grow-1">
-              <a href="#">Community</a>
+              <NavLink to="/tutorial" activeClassName="menu-active">
+                Community
+              </NavLink>
             </div>
             <input
               type="text"
               placeholder="Search"
               className="flex-sm-shrink"
             />
-            <div className="nav small" id="hide">v16.13.1</div>
+            <div className="nav small" id="hide">
+              v16.13.1
+            </div>
             <div className="nav small">Languages</div>
-            <div className="nav small" id="hide">Github</div>
+            <div className="nav small" id="hide">
+              Github
+            </div>
           </div>
         </div>
       </>

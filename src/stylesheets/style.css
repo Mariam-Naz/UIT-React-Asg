@@ -4,11 +4,10 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-.container-fluid {
+.header-container {
   text-align: center;
   background-color: #20232a;
   color: white;
-  padding-bottom: 1%;
 }
 
 h1 {
@@ -31,7 +30,7 @@ span {
 .nav {
   font-weight: 300;
   font-size: 1.1rem;
-  padding: 0% 2% 0% 2%;
+  margin: 0 20px;
   margin-bottom: 0;
 }
 a {
@@ -39,6 +38,11 @@ a {
   color: white;
 }
 a:hover {
+  color: #3fccfb;
+}
+
+.menu-active {
+  border-bottom: 4px solid #3fccfb;
   color: #3fccfb;
 }
 .react {
@@ -73,7 +77,9 @@ input:focus {
 /*Cover*/
 
 .cover {
+  text-align: center;
   background-color: #282c34;
+  color: white;
 }
 .main-heading {
   padding-top: 7%;
@@ -108,4 +114,36 @@ h2 {
 }
 .get-take {
   margin-bottom: 5%;
+}
+
+/*Blog*/
+.para {
+  font-size: 3.5vmin;
+  color: rgb(121, 120, 120);
+}
+
+.vertical-menu {
+  padding-top: 10%;
+  position: sticky;
+  background-color: #f7f7f7;
+  width: 395px; /* Set a width if you like */
+  padding-bottom: 85%;
+}
+
+.vertical-menu a {
+  /* Grey background color */
+  color: rgb(0, 0, 0); /* Black text color */
+  font-weight: 400;
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  color: rgb(158, 157, 157); /* Dark grey background on mouse-over */
+}
+
+.active {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
