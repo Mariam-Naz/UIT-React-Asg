@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container-fluid {
+  text-align: center;
+  background-color: #20232a;
+  color: white;
+  padding-bottom: 1%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+span {
+  color: #3fccfb;
+}
+
+.logo {
+  position: relative;
+  color: #3fccfb;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.nav {
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 0% 2% 0% 2%;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #3fccfb;
+}
+.react {
+  color: #3fccfb;
+}
+i {
+  font-size: 1.5rem;
+}
+input {
+  width: 12vw;
+  height: 30px;
+  background-color: #20232a;
+  border: none;
+}
+input:focus {
+  border: none;
+  outline: transparent;
+  background-color: #373940;
+}
+.small {
+  font-size: 15px;
+}
+@media only screen and (max-width: 870px) {
+  .support {
+    display: block;
+  }
+  #hide {
+    display: none;
+  }
+}
+
+/*Cover*/
+
+.cover {
+  background-color: #282c34;
+}
+.main-heading {
+  padding-top: 7%;
+  font-size: 3.5rem;
+  color: #3fccfb;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding-bottom: 5%;
+}
+
+.get-btn {
+  background-color: #3fccfb;
+  padding: 15px 23px;
+  color: black;
+  font-size: 2.8vmin;
+  font-weight: 400;
+}
+
+.get-btn:hover {
+  background-color: white;
+  color: black;
+}
+.take-tutorial {
+  color: #3fccfb;
+  font-size: 2.8vmin;
+}
+.get-take {
+  margin-bottom: 5%;
+}
