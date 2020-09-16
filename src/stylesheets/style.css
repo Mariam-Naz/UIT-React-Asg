@@ -30,7 +30,7 @@ span {
 .nav {
   font-weight: 300;
   font-size: 1.1rem;
-  margin: 0 20px;
+  padding: 0 2%;
   margin-bottom: 0;
 }
 a {
@@ -69,7 +69,7 @@ input:focus {
   .support {
     display: block;
   }
-  #hide {
+  .hide {
     display: none;
   }
 }
@@ -134,7 +134,7 @@ h2 {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .hide {
     display: none;
   }

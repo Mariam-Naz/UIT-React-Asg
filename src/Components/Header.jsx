@@ -18,10 +18,10 @@ export default class Header extends Component {
           <div className="d-flex justify-content-start">
             <div className="logo flex-grow-1">
               <NavLink to="/">
-                <span  className="react pr-2 pb-3"><FaReact /></span>
-              <span className="react pb-3" id="hide">
-                React
-              </span>
+                <span className="react pr-2 pb-3">
+                  <FaReact />
+                </span>
+                <span className="react pb-3 hide">React</span>
               </NavLink>
             </div>
             <div className="nav">
@@ -49,13 +49,9 @@ export default class Header extends Component {
               placeholder="Search"
               className="flex-sm-shrink"
             />
-            <div className="nav small" id="hide">
-              v16.13.1
-            </div>
+            <div className="nav small hide">v16.13.1</div>
             <div className="nav small">Languages</div>
-            <div className="nav small" id="hide">
-              Github
-            </div>
+            <div className="nav small hide">Github</div>
           </div>
         </div>
       </>
