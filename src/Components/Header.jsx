@@ -17,12 +17,12 @@ export default class Header extends Component {
           </div>
           <div className="d-flex justify-content-start">
             <div className="logo flex-grow-1">
-              <a href="#" className="react pr-2 pb-3">
-                <FaReact />
-              </a>
-              <a href="#" className="react pb-3" id="hide">
+              <NavLink to="/">
+                <span  className="react pr-2 pb-3"><FaReact /></span>
+              <span className="react pb-3" id="hide">
                 React
-              </a>
+              </span>
+              </NavLink>
             </div>
             <div className="nav">
               <NavLink to="/docs" activeClassName="menu-active">

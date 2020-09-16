@@ -81,6 +81,22 @@ input:focus {
   background-color: #282c34;
   color: white;
 }
+#back-cover {
+  position: absolute;
+  font-size: 42rem;
+  color: #32363e;
+  top: -7%;
+}
+.white {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  height: 40rem;
+}
+.index {
+  position: relative;
+  z-index: 2;
+}
 .main-heading {
   padding-top: 7%;
   font-size: 3.5rem;
@@ -111,11 +127,18 @@ h2 {
 .take-tutorial {
   color: #3fccfb;
   font-size: 2.8vmin;
+  position: relative;
+  z-index: 2;
 }
 .get-take {
   margin-bottom: 5%;
 }
 
+@media screen and (max-width: 1200px) {
+  .hide {
+    display: none;
+  }
+}
 /*Blog*/
 .para {
   font-size: 3.5vmin;
@@ -146,4 +169,8 @@ h2 {
 .active {
   color: rgb(0, 0, 0);
   font-weight: 600;
+}
+
+.pr-6 {
+  padding-right: 15%;
 }
